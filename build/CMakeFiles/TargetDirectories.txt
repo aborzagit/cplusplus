@@ -1,0 +1,3 @@
+/home/andrei/Work/cplusplus/build/CMakeFiles/rebuild_cache.dir
+/home/andrei/Work/cplusplus/build/CMakeFiles/edit_cache.dir
+/home/andrei/Work/cplusplus/build/CMakeFiles/test_app.dir
