@@ -62,13 +62,6 @@ pipeline {
                 dir('build') {
                     sh './test_app'
                 }
-                // mail bcc: '', body: 'From pipeline', cc: '', from: '', replyTo: '', subject: 'Test pipeline email', to: 'boborozi@yahoo.com'
-                // emailext body: 'tttt', subject: 'ttt', to: 'boborozi@yahoo.com'
-            emailext (
-                to: 'boborozi@yahoo.com',
-                subject: 'Test subject',
-                body: 'Test body'
-                )
             }
         }
     }
