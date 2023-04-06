@@ -30,6 +30,13 @@ node {
         )
     }
     
-    always{
+    post {
+        always{
+            emailext (
+                to: 'boborozi@yahoo.com',
+                subject: 'Test subject',
+                body: 'Test body'
+            )
+        }
     }
 }
