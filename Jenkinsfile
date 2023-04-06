@@ -43,7 +43,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                if (isUnix()) {
+                // if (isUnix()) {
                     sh script:'''
                     rm -rf build
                     mkdir build
@@ -51,9 +51,9 @@ pipeline {
                     cmake ..
                     make -j8
                     '''
-                } else {
-                    bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-                }
+                // } else {
+                //     bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+                // }
             }
         }
 
